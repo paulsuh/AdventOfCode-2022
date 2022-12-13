@@ -85,10 +85,10 @@ packet_list.sort(key=cmp_to_key(check_order))
 
 pprint(packet_list)
 
-result = 1
-for index, one_packet in zip(range(len(packet_list)), packet_list):
-    if str(one_packet) == str([[2]]) or str(one_packet) == str([[6]]):
-        print(one_packet, index+1)
-        result *= index+1
+print(packet_list.index([[2]]))
+print(packet_list.index([[6]]))
 
-print(result)
+print(
+    (packet_list.index([[2]])+1) *
+    (packet_list.index([[6]]) + 1)
+)
