@@ -89,6 +89,6 @@ print(packet_list.index([[2]]))
 print(packet_list.index([[6]]))
 
 print(
-    (packet_list.index([[2]])+1) *
+    (packet_list.index([[2]]) + 1) *
     (packet_list.index([[6]]) + 1)
 )
